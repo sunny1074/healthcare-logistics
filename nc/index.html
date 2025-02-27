@@ -1,0 +1,80 @@
+<!-- Healthcare Logistics App - Homepage -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HealthFlow</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h2>Efficient Healthcare Logistics at Your Fingertips</h2>
+            <p>Track technicians, manage tests, and book appointments easily.</p>
+            <a href="#booking" class="btn">Book a Test</a>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide a seamless logistics solution for healthcare companies to manage technicians and test bookings efficiently.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Technician Tracking</li>
+                <li>Test Booking</li>
+                <li>Real-Time Updates</li>
+                <li>Customer Support</li>
+            </ul>
+        </section>
+
+        <section id="booking">
+            <h2>Book a Test</h2>
+            <form id="bookingForm">
+                <label for="testName">Test Name:</label>
+                <input type="text" id="testName" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+
+                <label for="technician">Select Technician:</label>
+                <select id="technician" required>
+                    <option value="">-- Choose Technician --</option>
+                </select>
+
+                <button type="submit">Book Test</button>
+            </form>
+        </section>
+
+        <section id="bookings">
+            <h2>Upcoming Bookings</h2>
+            <ul id="bookingList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HealthFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
